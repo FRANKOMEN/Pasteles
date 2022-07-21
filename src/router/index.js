@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import CrearPastel from '../components/CrearPastel.vue'
+import EditarPastel from '../components/EditarPastel.vue'
+import ListarPastel from '../components/ListarPastel.vue'
 
 Vue.use(VueRouter)
 
@@ -10,6 +13,23 @@ const routes = [
     name: 'home',
     component: HomeView
   },
+  {
+    path: '/crearpastel',
+    name: 'CrearPastel',
+    component: CrearPastel
+  },
+  {
+    path: '/editarpastel',
+    name: 'EditarPastel',
+    component: EditarPastel
+  },
+  {
+    path: '/listarpastel',
+    name: 'ListarPastel',
+    component: ListarPastel
+  },
+
+
   {
     path: '/about',
     name: 'about',
